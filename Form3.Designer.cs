@@ -65,7 +65,6 @@
             this.lblDescription.Size = new System.Drawing.Size(137, 13);
             this.lblDescription.TabIndex = 2;
             this.lblDescription.Text = "Description (10 Word Limit):";
-            this.lblDescription.Click += new System.EventHandler(this.lblDescription_Click);
             // 
             // txtDecription
             // 

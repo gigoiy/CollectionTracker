@@ -31,7 +31,6 @@
             this.lblWelcome = new System.Windows.Forms.Label();
             this.lstCollections = new System.Windows.Forms.ListBox();
             this.lblCollections = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -53,7 +52,7 @@
             this.lstCollections.Items.AddRange(new object[] {
             "Add New Collection"});
             this.lstCollections.Location = new System.Drawing.Point(47, 100);
-            this.lstCollections.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstCollections.Margin = new System.Windows.Forms.Padding(2);
             this.lstCollections.Name = "lstCollections";
             this.lstCollections.Size = new System.Drawing.Size(454, 160);
             this.lstCollections.TabIndex = 1;
@@ -68,21 +67,10 @@
             this.lblCollections.TabIndex = 2;
             this.lblCollections.Text = "Collections:";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(128, 297);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(56, 19);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // btnView
             // 
             this.btnView.Location = new System.Drawing.Point(47, 297);
-            this.btnView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnView.Margin = new System.Windows.Forms.Padding(2);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(56, 19);
             this.btnView.TabIndex = 3;
@@ -92,19 +80,20 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(366, 297);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Location = new System.Drawing.Point(116, 297);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(56, 19);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(444, 297);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(56, 19);
             this.btnExit.TabIndex = 6;
@@ -122,14 +111,12 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnView);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblCollections);
             this.Controls.Add(this.lstCollections);
             this.Controls.Add(this.lblWelcome);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmHome";
             this.Text = "CollectionTracker";
-            this.Load += new System.EventHandler(this.FrmHome_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,7 +127,6 @@
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.ListBox lstCollections;
         private System.Windows.Forms.Label lblCollections;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnExit;

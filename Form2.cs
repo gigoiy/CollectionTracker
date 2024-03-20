@@ -17,11 +17,6 @@ namespace ProjectAlexKadyn
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAddNewItem_Click(object sender, EventArgs e)
         {
             
@@ -32,6 +27,16 @@ namespace ProjectAlexKadyn
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSaveAsCurrent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSaveAsNew_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

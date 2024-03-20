@@ -55,7 +55,7 @@
             // txtCurrentCollection
             // 
             this.txtCurrentCollection.Location = new System.Drawing.Point(81, 46);
-            this.txtCurrentCollection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCurrentCollection.Margin = new System.Windows.Forms.Padding(2);
             this.txtCurrentCollection.Name = "txtCurrentCollection";
             this.txtCurrentCollection.Size = new System.Drawing.Size(148, 20);
             this.txtCurrentCollection.TabIndex = 1;
@@ -83,7 +83,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(339, 46);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(145, 20);
@@ -92,7 +92,7 @@
             // btnAddNewItem
             // 
             this.btnAddNewItem.Location = new System.Drawing.Point(55, 279);
-            this.btnAddNewItem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddNewItem.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddNewItem.Name = "btnAddNewItem";
             this.btnAddNewItem.Size = new System.Drawing.Size(89, 19);
             this.btnAddNewItem.TabIndex = 6;
@@ -103,29 +103,30 @@
             // btnSaveAsCurrent
             // 
             this.btnSaveAsCurrent.Location = new System.Drawing.Point(215, 279);
-            this.btnSaveAsCurrent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSaveAsCurrent.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveAsCurrent.Name = "btnSaveAsCurrent";
             this.btnSaveAsCurrent.Size = new System.Drawing.Size(99, 19);
             this.btnSaveAsCurrent.TabIndex = 7;
             this.btnSaveAsCurrent.Text = "Save As Current";
             this.btnSaveAsCurrent.UseVisualStyleBackColor = true;
+            this.btnSaveAsCurrent.Click += new System.EventHandler(this.btnSaveAsCurrent_Click);
             // 
             // btnSaveAsNew
             // 
             this.btnSaveAsNew.Location = new System.Drawing.Point(319, 279);
-            this.btnSaveAsNew.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSaveAsNew.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveAsNew.Name = "btnSaveAsNew";
             this.btnSaveAsNew.Size = new System.Drawing.Size(89, 19);
             this.btnSaveAsNew.TabIndex = 8;
             this.btnSaveAsNew.Text = "Save As New";
             this.btnSaveAsNew.UseVisualStyleBackColor = true;
-            this.btnSaveAsNew.Click += new System.EventHandler(this.button3_Click);
+            this.btnSaveAsNew.Click += new System.EventHandler(this.btnSaveAsNew_Click);
             // 
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(481, 279);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(56, 19);
             this.btnExit.TabIndex = 9;
@@ -136,11 +137,12 @@
             // gridItems
             // 
             this.gridItems.AutoScroll = true;
+            this.gridItems.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.gridItems.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.gridItems.ColumnCount = 3;
             this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.gridItems.Location = new System.Drawing.Point(53, 114);
             this.gridItems.Name = "gridItems";
             this.gridItems.RowCount = 6;
@@ -189,7 +191,7 @@
             this.Controls.Add(this.lblModel);
             this.Controls.Add(this.txtCurrentCollection);
             this.Controls.Add(this.lblCollectionName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmViewCollection";
             this.Text = "View Collection";
             this.ResumeLayout(false);

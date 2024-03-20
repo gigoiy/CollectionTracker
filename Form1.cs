@@ -17,25 +17,20 @@ namespace ProjectAlexKadyn
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnView_Click(object sender, EventArgs e)
         {
-            new FrmViewCollection();
-        }
-
-        private void FrmHome_Load(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             
             this.Close();
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
 
         }
     }
