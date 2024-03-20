@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjectAlexKadyn
 {
-    public partial class FrmAddNewItem : Form
+    public partial class frmAddNewItem : Form
     {
-        public FrmAddNewItem()
+        public frmAddNewItem()
         {
             InitializeComponent();
         }

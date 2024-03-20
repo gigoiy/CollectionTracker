@@ -1,6 +1,6 @@
 ﻿namespace ProjectAlexKadyn
 {
-    partial class FrmViewCollection
+    partial class frmViewCollection
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.lblCollectionName = new System.Windows.Forms.Label();
-            this.txtCurrentCollection = new System.Windows.Forms.TextBox();
+            this.txtCollectionName = new System.Windows.Forms.TextBox();
             this.lblModel = new System.Windows.Forms.Label();
             this.lblTotalValue = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTotalValue = new System.Windows.Forms.TextBox();
             this.btnAddNewItem = new System.Windows.Forms.Button();
             this.btnSaveAsCurrent = new System.Windows.Forms.Button();
             this.btnSaveAsNew = new System.Windows.Forms.Button();
@@ -52,13 +52,13 @@
             this.lblCollectionName.TabIndex = 0;
             this.lblCollectionName.Text = "Collection Name:";
             // 
-            // txtCurrentCollection
+            // txtCollectionName
             // 
-            this.txtCurrentCollection.Location = new System.Drawing.Point(81, 46);
-            this.txtCurrentCollection.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCurrentCollection.Name = "txtCurrentCollection";
-            this.txtCurrentCollection.Size = new System.Drawing.Size(148, 20);
-            this.txtCurrentCollection.TabIndex = 1;
+            this.txtCollectionName.Location = new System.Drawing.Point(81, 46);
+            this.txtCollectionName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCollectionName.Name = "txtCollectionName";
+            this.txtCollectionName.Size = new System.Drawing.Size(148, 20);
+            this.txtCollectionName.TabIndex = 1;
             // 
             // lblModel
             // 
@@ -80,14 +80,14 @@
             this.lblTotalValue.TabIndex = 4;
             this.lblTotalValue.Text = "Total Value of Collection:";
             // 
-            // textBox1
+            // txtTotalValue
             // 
-            this.textBox1.Location = new System.Drawing.Point(339, 46);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(145, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtTotalValue.Location = new System.Drawing.Point(339, 46);
+            this.txtTotalValue.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTotalValue.Name = "txtTotalValue";
+            this.txtTotalValue.ReadOnly = true;
+            this.txtTotalValue.Size = new System.Drawing.Size(145, 20);
+            this.txtTotalValue.TabIndex = 5;
             // 
             // btnAddNewItem
             // 
@@ -142,7 +142,7 @@
             this.gridItems.ColumnCount = 3;
             this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.gridItems.Location = new System.Drawing.Point(53, 114);
             this.gridItems.Name = "gridItems";
             this.gridItems.RowCount = 6;
@@ -173,7 +173,7 @@
             this.lblValue.TabIndex = 12;
             this.lblValue.Text = "Value:";
             // 
-            // FrmViewCollection
+            // frmViewCollection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -186,13 +186,13 @@
             this.Controls.Add(this.btnSaveAsNew);
             this.Controls.Add(this.btnSaveAsCurrent);
             this.Controls.Add(this.btnAddNewItem);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTotalValue);
             this.Controls.Add(this.lblTotalValue);
             this.Controls.Add(this.lblModel);
-            this.Controls.Add(this.txtCurrentCollection);
+            this.Controls.Add(this.txtCollectionName);
             this.Controls.Add(this.lblCollectionName);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FrmViewCollection";
+            this.Name = "frmViewCollection";
             this.Text = "View Collection";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -202,10 +202,10 @@
         #endregion
 
         private System.Windows.Forms.Label lblCollectionName;
-        private System.Windows.Forms.TextBox txtCurrentCollection;
+        private System.Windows.Forms.TextBox txtCollectionName;
         private System.Windows.Forms.Label lblModel;
         private System.Windows.Forms.Label lblTotalValue;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTotalValue;
         private System.Windows.Forms.Button btnAddNewItem;
         private System.Windows.Forms.Button btnSaveAsCurrent;
         private System.Windows.Forms.Button btnSaveAsNew;

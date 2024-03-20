@@ -1,6 +1,6 @@
 ﻿namespace ProjectAlexKadyn
 {
-    partial class FrmHome
+    partial class frmHome
     {
         /// <summary>
         /// Required designer variable.
@@ -101,7 +101,7 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // FrmHome
+            // frmHome
             // 
             this.AcceptButton = this.btnView;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,7 +115,7 @@
             this.Controls.Add(this.lstCollections);
             this.Controls.Add(this.lblWelcome);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FrmHome";
+            this.Name = "frmHome";
             this.Text = "CollectionTracker";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,11 +125,11 @@
         #endregion
 
         private System.Windows.Forms.Label lblWelcome;
-        private System.Windows.Forms.ListBox lstCollections;
         private System.Windows.Forms.Label lblCollections;
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnExit;
+        public System.Windows.Forms.ListBox lstCollections;
     }
 }
 
