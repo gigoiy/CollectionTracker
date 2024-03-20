@@ -41,58 +41,66 @@
             // lblModelName
             // 
             this.lblModelName.AutoSize = true;
-            this.lblModelName.Location = new System.Drawing.Point(59, 71);
+            this.lblModelName.Location = new System.Drawing.Point(44, 22);
+            this.lblModelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblModelName.Name = "lblModelName";
-            this.lblModelName.Size = new System.Drawing.Size(140, 16);
+            this.lblModelName.Size = new System.Drawing.Size(112, 13);
             this.lblModelName.TabIndex = 0;
             this.lblModelName.Text = "Model Name/Number:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(239, 65);
+            this.textBox1.Location = new System.Drawing.Point(47, 47);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(424, 22);
+            this.textBox1.Size = new System.Drawing.Size(319, 20);
             this.textBox1.TabIndex = 1;
             // 
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(59, 117);
+            this.lblDescription.Location = new System.Drawing.Point(44, 84);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(78, 16);
+            this.lblDescription.Size = new System.Drawing.Size(137, 13);
             this.lblDescription.TabIndex = 2;
-            this.lblDescription.Text = "Description:";
+            this.lblDescription.Text = "Description (10 Word Limit):";
+            this.lblDescription.Click += new System.EventHandler(this.lblDescription_Click);
             // 
             // txtDecription
             // 
-            this.txtDecription.Location = new System.Drawing.Point(162, 111);
+            this.txtDecription.Location = new System.Drawing.Point(47, 99);
+            this.txtDecription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDecription.Multiline = true;
             this.txtDecription.Name = "txtDecription";
-            this.txtDecription.Size = new System.Drawing.Size(501, 125);
+            this.txtDecription.Size = new System.Drawing.Size(377, 102);
             this.txtDecription.TabIndex = 3;
             // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Location = new System.Drawing.Point(59, 266);
+            this.lblCategory.Location = new System.Drawing.Point(44, 226);
+            this.lblCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(65, 16);
+            this.lblCategory.Size = new System.Drawing.Size(52, 13);
             this.lblCategory.TabIndex = 4;
             this.lblCategory.Text = "Category:";
             // 
             // cboCategory
             // 
             this.cboCategory.FormattingEnabled = true;
-            this.cboCategory.Location = new System.Drawing.Point(162, 258);
+            this.cboCategory.Location = new System.Drawing.Point(47, 241);
+            this.cboCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboCategory.Name = "cboCategory";
-            this.cboCategory.Size = new System.Drawing.Size(341, 24);
+            this.cboCategory.Size = new System.Drawing.Size(257, 21);
             this.cboCategory.TabIndex = 5;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(62, 343);
+            this.btnAdd.Location = new System.Drawing.Point(46, 279);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(109, 23);
+            this.btnAdd.Size = new System.Drawing.Size(82, 19);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -101,9 +109,10 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(561, 343);
+            this.btnExit.Location = new System.Drawing.Point(421, 279);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(102, 23);
+            this.btnExit.Size = new System.Drawing.Size(76, 19);
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -112,10 +121,10 @@
             // FrmAddNewItem
             // 
             this.AcceptButton = this.btnAdd;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.cboCategory);
@@ -124,6 +133,7 @@
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblModelName);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmAddNewItem";
             this.Text = "Add New Item";
             this.ResumeLayout(false);

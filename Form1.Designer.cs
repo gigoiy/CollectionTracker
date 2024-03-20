@@ -40,35 +40,40 @@
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(60, 46);
+            this.lblWelcome.Location = new System.Drawing.Point(45, 37);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(219, 16);
+            this.lblWelcome.Size = new System.Drawing.Size(177, 13);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Welcome to our Collection Tracker! ";
             // 
             // lstCollections
             // 
             this.lstCollections.FormattingEnabled = true;
-            this.lstCollections.ItemHeight = 16;
-            this.lstCollections.Location = new System.Drawing.Point(63, 123);
+            this.lstCollections.Items.AddRange(new object[] {
+            "Add New Collection"});
+            this.lstCollections.Location = new System.Drawing.Point(47, 100);
+            this.lstCollections.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstCollections.Name = "lstCollections";
-            this.lstCollections.Size = new System.Drawing.Size(604, 196);
+            this.lstCollections.Size = new System.Drawing.Size(454, 160);
             this.lstCollections.TabIndex = 1;
             // 
             // lblCollections
             // 
             this.lblCollections.AutoSize = true;
-            this.lblCollections.Location = new System.Drawing.Point(60, 94);
+            this.lblCollections.Location = new System.Drawing.Point(45, 76);
+            this.lblCollections.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCollections.Name = "lblCollections";
-            this.lblCollections.Size = new System.Drawing.Size(76, 16);
+            this.lblCollections.Size = new System.Drawing.Size(61, 13);
             this.lblCollections.TabIndex = 2;
             this.lblCollections.Text = "Collections:";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(170, 366);
+            this.btnAdd.Location = new System.Drawing.Point(128, 297);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(56, 19);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -76,9 +81,10 @@
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(63, 366);
+            this.btnView.Location = new System.Drawing.Point(47, 297);
+            this.btnView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(75, 23);
+            this.btnView.Size = new System.Drawing.Size(56, 19);
             this.btnView.TabIndex = 3;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = true;
@@ -86,9 +92,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(488, 366);
+            this.btnDelete.Location = new System.Drawing.Point(366, 297);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(56, 19);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -96,9 +103,10 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(592, 366);
+            this.btnExit.Location = new System.Drawing.Point(444, 297);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(56, 19);
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -107,10 +115,10 @@
             // FrmHome
             // 
             this.AcceptButton = this.btnView;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnView);
@@ -118,8 +126,9 @@
             this.Controls.Add(this.lblCollections);
             this.Controls.Add(this.lstCollections);
             this.Controls.Add(this.lblWelcome);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmHome";
-            this.Text = "CollectionTracker \"Home\"";
+            this.Text = "CollectionTracker";
             this.Load += new System.EventHandler(this.FrmHome_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
