@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\eBayAPI\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +91,544 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Connected Services\eBayAPI\ebaySvc.wsdl" />
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddFixedPriceItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddFixedPriceItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddItemsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddMemberMessageAAQToPartnerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddMemberMessageAAQToPartnerResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddMemberMessageRTQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddMemberMessageRTQResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddMemberMessagesAAQToBidderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddMemberMessagesAAQToBidderResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddOrderResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddSecondChanceItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddSecondChanceItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddToItemDescriptionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddToItemDescriptionResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddToWatchListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.AddToWatchListResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.CompleteSaleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.CompleteSaleResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ConfirmIdentityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ConfirmIdentityResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.CustomSecurityHeaderType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.DeleteMyMessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.DeleteMyMessagesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.EndFixedPriceItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.EndFixedPriceItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.EndItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.EndItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.EndItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.EndItemsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ExtendSiteHostedPicturesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ExtendSiteHostedPicturesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.FetchTokenResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.FetchTokenResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetAccountResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetAdFormatLeadsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetAdFormatLeadsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetAllBiddersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetAllBiddersResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetBestOffersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetBestOffersResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetBidderListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetBidderListResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetCategoriesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetCategoriesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetCategoryFeaturesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetCategoryFeaturesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetCategoryMappingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetCategoryMappingsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetChallengeTokenResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetChallengeTokenResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetClientAlertsAuthTokenResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetClientAlertsAuthTokenResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetDescriptionTemplatesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetDescriptionTemplatesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GeteBayDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GeteBayDetailsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GeteBayOfficialTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GeteBayOfficialTimeResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetFeedbackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetFeedbackResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetItemsAwaitingFeedbackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetItemsAwaitingFeedbackResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetItemShippingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetItemShippingResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetItemTransactionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetItemTransactionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetMemberMessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetMemberMessagesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetMessagePreferencesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetMessagePreferencesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetMyeBayBuyingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetMyeBayBuyingResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetMyeBaySellingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetMyeBaySellingResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetMyMessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetMyMessagesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetNotificationPreferencesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetNotificationPreferencesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetNotificationsUsageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetNotificationsUsageResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetOrdersResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSellerDashboardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSellerDashboardResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSellerEventsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSellerEventsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSellerListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSellerListResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSellerTransactionsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSellerTransactionsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSessionIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSessionIDResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetShippingDiscountProfilesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetShippingDiscountProfilesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetStoreCategoryUpdateStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetStoreCategoryUpdateStatusResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetStoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetStoreResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSuggestedCategoriesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetSuggestedCategoriesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetTaxTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetTaxTableResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetTokenStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetTokenStatusResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetUserContactDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetUserContactDetailsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetUserPreferencesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetUserPreferencesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetUserResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetVeROReasonCodeDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetVeROReasonCodeDetailsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetVeROReportStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.GetVeROReportStatusResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.LeaveFeedbackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.LeaveFeedbackResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.PlaceOfferResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.PlaceOfferResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RelistFixedPriceItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RelistFixedPriceItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RelistItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RelistItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RemoveFromWatchListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RemoveFromWatchListResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RespondToBestOfferResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RespondToBestOfferResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RespondToFeedbackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RespondToFeedbackResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ReviseFixedPriceItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ReviseFixedPriceItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ReviseInventoryStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ReviseInventoryStatusResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ReviseItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ReviseItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ReviseMyMessagesFoldersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ReviseMyMessagesFoldersResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ReviseMyMessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ReviseMyMessagesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RevokeTokenResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.RevokeTokenResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SendInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SendInvoiceResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetMessagePreferencesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetMessagePreferencesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetNotificationPreferencesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetNotificationPreferencesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetShippingDiscountProfilesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetShippingDiscountProfilesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetStoreCategoriesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetStoreCategoriesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetTaxTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetTaxTableResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetUserNotesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetUserNotesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetUserPreferencesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.SetUserPreferencesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.UploadSiteHostedPicturesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.UploadSiteHostedPicturesResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ValidateChallengeInputResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ValidateChallengeInputResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ValidateTestUserRegistrationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.ValidateTestUserRegistrationResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.VerifyAddFixedPriceItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.VerifyAddFixedPriceItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.VerifyAddItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.VerifyAddItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.VerifyAddSecondChanceItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.VerifyAddSecondChanceItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.VerifyRelistItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.VerifyRelistItemResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.VeROReportItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\eBayAPI\ProjectAlexKadyn.eBayAPI.VeROReportItemsResponseType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,6 +641,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\eBayAPI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\eBayAPI\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\eBayAPI\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\eBayAPI\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

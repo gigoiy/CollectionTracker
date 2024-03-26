@@ -49,6 +49,7 @@
             // lstCollections
             // 
             this.lstCollections.FormattingEnabled = true;
+            this.lstCollections.ImeMode = System.Windows.Forms.ImeMode.On;
             this.lstCollections.Items.AddRange(new object[] {
             "Add New Collection"});
             this.lstCollections.Location = new System.Drawing.Point(47, 100);
@@ -114,6 +115,7 @@
             this.Controls.Add(this.lblCollections);
             this.Controls.Add(this.lstCollections);
             this.Controls.Add(this.lblWelcome);
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHome";
             this.Text = "CollectionTracker";

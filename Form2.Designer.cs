@@ -142,7 +142,7 @@
             this.gridItems.ColumnCount = 3;
             this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.gridItems.Location = new System.Drawing.Point(53, 114);
             this.gridItems.Name = "gridItems";
             this.gridItems.RowCount = 6;
@@ -194,6 +194,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmViewCollection";
             this.Text = "View Collection";
+            this.Load += new System.EventHandler(this.frmViewCollection_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

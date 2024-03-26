@@ -14,7 +14,6 @@ namespace ProjectAlexKadyn
 
     public partial class frmHome : Form
     {
-        public string collection;
         public frmHome()
         {
             InitializeComponent();
@@ -22,10 +21,9 @@ namespace ProjectAlexKadyn
 
         private void btnView_Click(object sender, EventArgs e)
         {
-            collection = lstCollections.Text.ToString();
-            frmViewCollection frmViewCollection = new frmViewCollection();
-            frmViewCollection.collectionName = collection;
-            frmViewCollection.Show(this);
+            frmViewCollection form = new frmViewCollection();
+            form.collectionName = lstCollections.SelectedItem.ToString();
+            form.Show();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
