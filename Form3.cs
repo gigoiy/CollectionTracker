@@ -26,7 +26,7 @@ namespace ProjectAlexKadyn
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -35,5 +35,9 @@ namespace ProjectAlexKadyn
 
         }
 
+        private void txtDecription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

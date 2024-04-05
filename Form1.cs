@@ -14,6 +14,8 @@ namespace ProjectAlexKadyn
 
     public partial class frmHome : Form
     {
+       //initially tried putting the class here for the info, but didnt seem to work
+
         public frmHome()
         {
             InitializeComponent();
@@ -34,6 +36,11 @@ namespace ProjectAlexKadyn
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lstCollections_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

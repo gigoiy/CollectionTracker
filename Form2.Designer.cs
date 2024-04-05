@@ -45,56 +45,53 @@
             // lblCollectionName
             // 
             this.lblCollectionName.AutoSize = true;
-            this.lblCollectionName.Location = new System.Drawing.Point(78, 22);
-            this.lblCollectionName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCollectionName.Location = new System.Drawing.Point(104, 27);
             this.lblCollectionName.Name = "lblCollectionName";
-            this.lblCollectionName.Size = new System.Drawing.Size(87, 13);
+            this.lblCollectionName.Size = new System.Drawing.Size(109, 16);
             this.lblCollectionName.TabIndex = 0;
             this.lblCollectionName.Text = "Collection Name:";
             // 
             // txtCollectionName
             // 
-            this.txtCollectionName.Location = new System.Drawing.Point(81, 46);
-            this.txtCollectionName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCollectionName.Location = new System.Drawing.Point(108, 57);
+            this.txtCollectionName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCollectionName.Name = "txtCollectionName";
-            this.txtCollectionName.Size = new System.Drawing.Size(148, 20);
+            this.txtCollectionName.Size = new System.Drawing.Size(196, 22);
             this.txtCollectionName.TabIndex = 1;
             // 
             // lblModel
             // 
             this.lblModel.AutoSize = true;
-            this.lblModel.Location = new System.Drawing.Point(55, 98);
-            this.lblModel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblModel.Location = new System.Drawing.Point(73, 121);
             this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(112, 13);
+            this.lblModel.Size = new System.Drawing.Size(140, 16);
             this.lblModel.TabIndex = 2;
             this.lblModel.Text = "Model Name/Number:";
             // 
             // lblTotalValue
             // 
             this.lblTotalValue.AutoSize = true;
-            this.lblTotalValue.Location = new System.Drawing.Point(336, 22);
-            this.lblTotalValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalValue.Location = new System.Drawing.Point(448, 27);
             this.lblTotalValue.Name = "lblTotalValue";
-            this.lblTotalValue.Size = new System.Drawing.Size(125, 13);
+            this.lblTotalValue.Size = new System.Drawing.Size(155, 16);
             this.lblTotalValue.TabIndex = 4;
             this.lblTotalValue.Text = "Total Value of Collection:";
             // 
             // txtTotalValue
             // 
-            this.txtTotalValue.Location = new System.Drawing.Point(339, 46);
-            this.txtTotalValue.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTotalValue.Location = new System.Drawing.Point(452, 57);
+            this.txtTotalValue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTotalValue.Name = "txtTotalValue";
             this.txtTotalValue.ReadOnly = true;
-            this.txtTotalValue.Size = new System.Drawing.Size(145, 20);
+            this.txtTotalValue.Size = new System.Drawing.Size(192, 22);
             this.txtTotalValue.TabIndex = 5;
             // 
             // btnAddNewItem
             // 
-            this.btnAddNewItem.Location = new System.Drawing.Point(55, 279);
-            this.btnAddNewItem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddNewItem.Location = new System.Drawing.Point(73, 343);
+            this.btnAddNewItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddNewItem.Name = "btnAddNewItem";
-            this.btnAddNewItem.Size = new System.Drawing.Size(89, 19);
+            this.btnAddNewItem.Size = new System.Drawing.Size(119, 23);
             this.btnAddNewItem.TabIndex = 6;
             this.btnAddNewItem.Text = "Add New Item";
             this.btnAddNewItem.UseVisualStyleBackColor = true;
@@ -102,10 +99,10 @@
             // 
             // btnSaveAsCurrent
             // 
-            this.btnSaveAsCurrent.Location = new System.Drawing.Point(215, 279);
-            this.btnSaveAsCurrent.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSaveAsCurrent.Location = new System.Drawing.Point(287, 343);
+            this.btnSaveAsCurrent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveAsCurrent.Name = "btnSaveAsCurrent";
-            this.btnSaveAsCurrent.Size = new System.Drawing.Size(99, 19);
+            this.btnSaveAsCurrent.Size = new System.Drawing.Size(132, 23);
             this.btnSaveAsCurrent.TabIndex = 7;
             this.btnSaveAsCurrent.Text = "Save As Current";
             this.btnSaveAsCurrent.UseVisualStyleBackColor = true;
@@ -113,10 +110,10 @@
             // 
             // btnSaveAsNew
             // 
-            this.btnSaveAsNew.Location = new System.Drawing.Point(319, 279);
-            this.btnSaveAsNew.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSaveAsNew.Location = new System.Drawing.Point(425, 343);
+            this.btnSaveAsNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveAsNew.Name = "btnSaveAsNew";
-            this.btnSaveAsNew.Size = new System.Drawing.Size(89, 19);
+            this.btnSaveAsNew.Size = new System.Drawing.Size(119, 23);
             this.btnSaveAsNew.TabIndex = 8;
             this.btnSaveAsNew.Text = "Save As New";
             this.btnSaveAsNew.UseVisualStyleBackColor = true;
@@ -125,10 +122,10 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(481, 279);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Location = new System.Drawing.Point(641, 343);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(56, 19);
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -142,43 +139,47 @@
             this.gridItems.ColumnCount = 3;
             this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.gridItems.Location = new System.Drawing.Point(53, 114);
+            this.gridItems.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this.gridItems.Location = new System.Drawing.Point(71, 140);
+            this.gridItems.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridItems.Name = "gridItems";
             this.gridItems.RowCount = 6;
             this.gridItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.30769F));
             this.gridItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.69231F));
-            this.gridItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.gridItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.gridItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.gridItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.gridItems.Size = new System.Drawing.Size(499, 145);
+            this.gridItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.gridItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
+            this.gridItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.gridItems.Size = new System.Drawing.Size(665, 178);
             this.gridItems.TabIndex = 10;
+            this.gridItems.Paint += new System.Windows.Forms.PaintEventHandler(this.gridItems_Paint);
             // 
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(279, 98);
+            this.lblDescription.Location = new System.Drawing.Point(372, 121);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(63, 13);
+            this.lblDescription.Size = new System.Drawing.Size(78, 16);
             this.lblDescription.TabIndex = 11;
             this.lblDescription.Text = "Description:";
             // 
             // lblValue
             // 
             this.lblValue.AutoSize = true;
-            this.lblValue.Location = new System.Drawing.Point(502, 98);
+            this.lblValue.Location = new System.Drawing.Point(669, 121);
+            this.lblValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValue.Name = "lblValue";
-            this.lblValue.Size = new System.Drawing.Size(37, 13);
+            this.lblValue.Size = new System.Drawing.Size(45, 16);
             this.lblValue.TabIndex = 12;
             this.lblValue.Text = "Value:";
             // 
             // frmViewCollection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblValue);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.gridItems);
@@ -191,7 +192,7 @@
             this.Controls.Add(this.lblModel);
             this.Controls.Add(this.txtCollectionName);
             this.Controls.Add(this.lblCollectionName);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmViewCollection";
             this.Text = "View Collection";
             this.Load += new System.EventHandler(this.frmViewCollection_Load);

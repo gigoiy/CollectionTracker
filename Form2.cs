@@ -14,7 +14,20 @@ namespace ProjectAlexKadyn
     public partial class frmViewCollection : Form
     {
         public double totalValue;
-        public string collectionName { get; set; }
+        public string collectionName { get; set; } // should it be set into comments because i put it in the class?
+        public class CollectionName
+        {
+            // This is where the class for the info will be
+            string collectionName { get; set; }
+            string collectionValue { get; set; }
+            
+            string[,] item; //starts 2d array, 1st will be the item name, 2nd will be the price, description, and model#
+            public CollectionName(string Name)
+            {
+                collectionName = Name;
+            }
+            // made the constructor so that when the new collection is called, it will automatically be set
+        }
         public frmViewCollection()
         {
             InitializeComponent();
@@ -72,6 +85,12 @@ namespace ProjectAlexKadyn
         }
 
         private void btnSaveAsNew_Click(object sender, EventArgs e)
+        {
+            new CollectionName(txtCollectionName.Text);
+            // should save a new colleciton name, which can then be formatted for items with the arraay
+        }
+
+        private void gridItems_Paint(object sender, PaintEventArgs e)
         {
 
         }
