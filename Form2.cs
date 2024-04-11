@@ -15,12 +15,7 @@ namespace ProjectAlexKadyn
     {
         public double totalValue;
         public string collectionName { get; set; } // should it be set into comments because i put it in the class?
-        public class CollectionName
-        {
-            // This is where the class for the info will be
-            string collectionName { get; set; }
-            string collectionValue { get; set; }
-            
+        
         public frmViewCollection()
         {
             InitializeComponent();
@@ -63,7 +58,10 @@ namespace ProjectAlexKadyn
         private void btnAddNewItem_Click(object sender, EventArgs e)
         {
             
-            
+            frmAddNewItem form = new frmAddNewItem(txtCollectionName.Text);
+            form.Show(); // using this to open up form 3
+  
+         //will save collection name in form 3 to whatever was set into the text box previously
 
         }
 
@@ -79,8 +77,10 @@ namespace ProjectAlexKadyn
 
         private void btnSaveAsNew_Click(object sender, EventArgs e)
         {
-            new CollectionName(txtCollectionName.Text);
+            // new CollectionName(txtCollectionName.Text);
             // should save a new colleciton name, which can then be formatted for items with the arraay
+            CollectionName NewCollection = new CollectionName(txtCollectionName.Text);
+
         }
 
         private void gridItems_Paint(object sender, PaintEventArgs e)

@@ -31,7 +31,7 @@
             this.lblModel = new System.Windows.Forms.Label();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.lblDescription = new System.Windows.Forms.Label();
-            this.txtDecription = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.lblCategory = new System.Windows.Forms.Label();
             this.ddCategory = new System.Windows.Forms.ComboBox();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -64,15 +64,15 @@
             this.lblDescription.TabIndex = 2;
             this.lblDescription.Text = "Description (10 Word Limit):";
             // 
-            // txtDecription
+            // txtDescription
             // 
-            this.txtDecription.Location = new System.Drawing.Point(63, 122);
-            this.txtDecription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDecription.Multiline = true;
-            this.txtDecription.Name = "txtDecription";
-            this.txtDecription.Size = new System.Drawing.Size(501, 125);
-            this.txtDecription.TabIndex = 3;
-            this.txtDecription.TextChanged += new System.EventHandler(this.txtDecription_TextChanged);
+            this.txtDescription.Location = new System.Drawing.Point(63, 122);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(501, 125);
+            this.txtDescription.TabIndex = 3;
+            this.txtDescription.TextChanged += new System.EventHandler(this.txtDecription_TextChanged);
             // 
             // lblCategory
             // 
@@ -126,7 +126,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.ddCategory);
             this.Controls.Add(this.lblCategory);
-            this.Controls.Add(this.txtDecription);
+            this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.txtModel);
             this.Controls.Add(this.lblModel);
@@ -143,7 +143,7 @@
         private System.Windows.Forms.Label lblModel;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label lblDescription;
-        private System.Windows.Forms.TextBox txtDecription;
+        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.ComboBox ddCategory;
         private System.Windows.Forms.Button btnAdd;
