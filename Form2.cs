@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjectAlexKadyn
@@ -14,8 +7,9 @@ namespace ProjectAlexKadyn
     public partial class frmViewCollection : Form
     {
         public double totalValue;
-        public string collectionName { get; set; } // should it be set into comments because i put it in the class?
-        
+
+        frmHome home = new frmHome();
+        public string collectionName { get; set; }
         public frmViewCollection()
         {
             InitializeComponent();
@@ -57,11 +51,11 @@ namespace ProjectAlexKadyn
 
         private void btnAddNewItem_Click(object sender, EventArgs e)
         {
-            
-            frmAddNewItem form = new frmAddNewItem(txtCollectionName.Text);
+
+            frmAddNewItem form = new frmAddNewItem();
             form.Show(); // using this to open up form 3
-  
-         //will save collection name in form 3 to whatever was set into the text box previously
+
+            //will save collection name in form 3 to whatever was set into the text box previously
 
         }
 
@@ -73,13 +67,30 @@ namespace ProjectAlexKadyn
         private void btnSaveAsCurrent_Click(object sender, EventArgs e)
         {
 
+            CollectionName newCollectionAdd = new CollectionName();
+
+            if (this.collectionName == "Add New Item")
+            {
+                home.lstCollections.Items.Remove("Add New Collection");
+                home.lstCollections.Items.Add("Add New Collection");
+            }
+            
+            newCollectionAdd.collectionName = txtCollectionName.Text;
+            home.lstCollections.Items.Add(newCollectionAdd.collectionName);
+            home.Show();
+            this.Hide();
         }
 
         private void btnSaveAsNew_Click(object sender, EventArgs e)
         {
             // new CollectionName(txtCollectionName.Text);
             // should save a new colleciton name, which can then be formatted for items with the arraay
-            CollectionName NewCollection = new CollectionName(txtCollectionName.Text);
+            CollectionName newCollection = new CollectionName();
+            newCollection.collectionName = txtCollectionName.Text;
+            home.lstCollections.Items.Add(newCollection.collectionName);
+            collectionName = newCollection.collectionName;
+            home.Show();
+            this.Hide();
 
         }
 

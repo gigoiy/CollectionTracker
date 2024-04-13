@@ -25,7 +25,9 @@ namespace ProjectAlexKadyn
         {
             frmViewCollection form = new frmViewCollection();
             form.collectionName = lstCollections.SelectedItem.ToString();
+            this.Hide();
             form.Show();
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)

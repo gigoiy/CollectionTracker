@@ -14,11 +14,9 @@ namespace ProjectAlexKadyn
 {
     public partial class frmAddNewItem : Form
     {
-        public frmAddNewItem(string collectionName)
+        public frmAddNewItem()
         {
             InitializeComponent();
-            string Collection;
-            Collection = collectionName;
             // by using a constructor, the collection name is carried from from2 to 3...
 
         }
@@ -30,11 +28,13 @@ namespace ProjectAlexKadyn
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            CollectionName collection = new CollectionName();
+
             if (txtDescription.Text != "" && txtModel.Text != "" && ddCategory.Text != "")
             {
-                Collection.item[0, 0] = txtModel.Text;
-                Collection.item[1, 0] = txtDescription.Text;
-                Collection.item[2, 0] = ddCategory.Text;
+                collection.item[0, 0] = txtModel.Text;
+                collection.item[1, 0] = txtDescription.Text;
+                collection.item[2, 0] = ddCategory.Text;
             }
             else
             {
