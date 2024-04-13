@@ -69,7 +69,7 @@ namespace ProjectAlexKadyn
 
             CollectionName newCollectionAdd = new CollectionName();
 
-            if (this.collectionName == "Add New Item")
+            if (this.collectionName == "Add New Collection")
             {
                 home.lstCollections.Items.Remove("Add New Collection");
                 home.lstCollections.Items.Add("Add New Collection");
