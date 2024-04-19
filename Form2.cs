@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 using System.Windows.Forms;
 
 namespace ProjectAlexKadyn
@@ -83,6 +82,10 @@ namespace ProjectAlexKadyn
 
         private void btnSaveAsCurrent_Click(object sender, EventArgs e)
         {
+            if (collectionCurrent.collectionName != collectionDefault.collectionName)
+            {
+                home.lstCollections.Items.Remove(home.lstCollections.SelectedItem);
+            }
             collectionCurrent.collectionName = txtCollectionName.Text;
             collectionCurrent.collectionValue = totalValue;
 
@@ -97,10 +100,10 @@ namespace ProjectAlexKadyn
             collectionCurrent.collectionName = txtCollectionName.Text;
             collectionCurrent.collectionValue = totalValue;
 
-            home.lstCollections.Items.Add(new Collection { collectionName = collectionCurrent.collectionName, collectionValue = collectionCurrent.collectionValue});
+            home.lstCollections.Items.Add(new Collection { collectionName = collectionCurrent.collectionName, collectionValue = collectionCurrent.collectionValue });
 
             home.Show();
-            this.Hide(); 
+            this.Hide();
         }
 
         private void gridItems_Paint(object sender, PaintEventArgs e)

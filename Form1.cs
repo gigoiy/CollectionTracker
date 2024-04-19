@@ -13,10 +13,11 @@ namespace ProjectAlexKadyn
 {
     public partial class frmHome : Form
     {
+
         public frmHome()
         {
             InitializeComponent();
-            this.lstCollections.Items.Add(new Collection { collectionName = "Add New Collection", collectionValue = "0.00" });
+            lstCollections.Items.Add(new Collection { collectionName = "Add New Collection", collectionValue = "0.00" });
         }
 
         private void btnView_Click(object sender, EventArgs e)
