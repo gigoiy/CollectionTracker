@@ -28,7 +28,7 @@ namespace ProjectAlexKadyn
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            CollectionName collection = new CollectionName();
+            Collection collection = new Collection();
 
             if (txtDescription.Text != "" && txtModel.Text != "" && ddCategory.Text != "")
             {

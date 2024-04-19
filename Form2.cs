@@ -6,21 +6,38 @@ namespace ProjectAlexKadyn
 {
     public partial class frmViewCollection : Form
     {
-        public double totalValue;
+        public string totalValue;
+        public float value;
+        public string name;
 
-        frmHome home = new frmHome();
-        public string collectionName { get; set; }
+        Collection collectionCurrent = new Collection();
+        Collection collectionDefault = new Collection();
+
         public frmViewCollection()
         {
             InitializeComponent();
         }
 
+        frmHome home = new frmHome();
+
         private void frmViewCollection_Load(object sender, System.EventArgs e)
         {
-            txtCollectionName.Text = collectionName;
-            totalValue = 0.00;
-            txtTotalValue.Text = totalValue.ToString("C", CultureInfo.CurrentCulture);
+            collectionDefault.collectionName = "Add New Collection";
+            collectionDefault.collectionValue = "$0.00";
 
+            collectionCurrent.collectionName = name;
+            collectionCurrent.collectionValue = totalValue;
+
+            if (name == collectionDefault.collectionName)
+            {
+                txtTotalValue.Text = collectionDefault.collectionValue;
+                txtCollectionName.Text = collectionDefault.collectionName;
+            }
+            else
+            {
+                txtCollectionName.Text = collectionCurrent.collectionName;
+                txtTotalValue.Text = collectionCurrent.collectionValue;
+            }
 
             /*
              * Oh boy it's about to get slightly hairy...
@@ -66,32 +83,24 @@ namespace ProjectAlexKadyn
 
         private void btnSaveAsCurrent_Click(object sender, EventArgs e)
         {
+            collectionCurrent.collectionName = txtCollectionName.Text;
+            collectionCurrent.collectionValue = totalValue;
 
-            CollectionName newCollectionAdd = new CollectionName();
+            home.lstCollections.Items.Add(new Collection { collectionName = collectionCurrent.collectionName, collectionValue = collectionCurrent.collectionValue });
 
-            if (this.collectionName == "Add New Collection")
-            {
-                home.lstCollections.Items.Remove("Add New Collection");
-                home.lstCollections.Items.Add("Add New Collection");
-            }
-            
-            newCollectionAdd.collectionName = txtCollectionName.Text;
-            home.lstCollections.Items.Add(newCollectionAdd.collectionName);
             home.Show();
             this.Hide();
         }
 
         private void btnSaveAsNew_Click(object sender, EventArgs e)
         {
-            // new CollectionName(txtCollectionName.Text);
-            // should save a new colleciton name, which can then be formatted for items with the arraay
-            CollectionName newCollection = new CollectionName();
-            newCollection.collectionName = txtCollectionName.Text;
-            home.lstCollections.Items.Add(newCollection.collectionName);
-            collectionName = newCollection.collectionName;
-            home.Show();
-            this.Hide();
+            collectionCurrent.collectionName = txtCollectionName.Text;
+            collectionCurrent.collectionValue = totalValue;
 
+            home.lstCollections.Items.Add(new Collection { collectionName = collectionCurrent.collectionName, collectionValue = collectionCurrent.collectionValue});
+
+            home.Show();
+            this.Hide(); 
         }
 
         private void gridItems_Paint(object sender, PaintEventArgs e)
