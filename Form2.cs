@@ -10,6 +10,8 @@ namespace ProjectAlexKadyn
         public float value;
         public string name;
 
+        static frmHome home = new frmHome();
+
         Collection collectionCurrent = new Collection();
         Collection collectionDefault = new Collection();
 
@@ -17,8 +19,6 @@ namespace ProjectAlexKadyn
         {
             InitializeComponent();
         }
-
-        frmHome home = new frmHome();
 
         private void frmViewCollection_Load(object sender, System.EventArgs e)
         {

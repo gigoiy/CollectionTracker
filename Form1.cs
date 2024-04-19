@@ -19,11 +19,6 @@ namespace ProjectAlexKadyn
             this.lstCollections.Items.Add(new Collection { collectionName = "Add New Collection", collectionValue = "0.00" });
         }
 
-        private void frmHome_Load(object sender, System.EventArgs e)
-        {
- 
-        }
-
         private void btnView_Click(object sender, EventArgs e)
         {
 
