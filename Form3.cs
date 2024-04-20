@@ -25,7 +25,7 @@ namespace ProjectAlexKadyn
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
-            if (txtDescription.Text != "" && txtModel.Text != "")
+            if (txtModel.Text != string.Empty)
             {
                 searchItem();
             }
@@ -67,6 +67,11 @@ namespace ProjectAlexKadyn
         }
 
         private void txtDecription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblModel_Click(object sender, EventArgs e)
         {
 
         }

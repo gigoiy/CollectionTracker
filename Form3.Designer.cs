@@ -30,8 +30,6 @@
         {
             this.lblModel = new System.Windows.Forms.Label();
             this.txtModel = new System.Windows.Forms.TextBox();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.txtDescription = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -42,41 +40,22 @@
             this.lblModel.Location = new System.Drawing.Point(44, 22);
             this.lblModel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(112, 13);
+            this.lblModel.Size = new System.Drawing.Size(172, 13);
             this.lblModel.TabIndex = 0;
-            this.lblModel.Text = "Model Name/Number:";
+            this.lblModel.Text = "Description/Model Name/Model #:";
+            this.lblModel.Click += new System.EventHandler(this.lblModel_Click);
             // 
             // txtModel
             // 
-            this.txtModel.Location = new System.Drawing.Point(47, 47);
+            this.txtModel.Location = new System.Drawing.Point(47, 49);
             this.txtModel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(319, 20);
             this.txtModel.TabIndex = 1;
             // 
-            // lblDescription
-            // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(44, 84);
-            this.lblDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(137, 13);
-            this.lblDescription.TabIndex = 2;
-            this.lblDescription.Text = "Description (10 Word Limit):";
-            // 
-            // txtDescription
-            // 
-            this.txtDescription.Location = new System.Drawing.Point(47, 99);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(377, 102);
-            this.txtDescription.TabIndex = 3;
-            this.txtDescription.TextChanged += new System.EventHandler(this.txtDecription_TextChanged);
-            // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(46, 279);
+            this.btnAdd.Location = new System.Drawing.Point(47, 88);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(82, 19);
@@ -88,7 +67,7 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(421, 279);
+            this.btnExit.Location = new System.Drawing.Point(290, 94);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(76, 19);
@@ -103,11 +82,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(405, 124);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtDescription);
-            this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.txtModel);
             this.Controls.Add(this.lblModel);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -122,8 +99,6 @@
 
         private System.Windows.Forms.Label lblModel;
         private System.Windows.Forms.TextBox txtModel;
-        private System.Windows.Forms.Label lblDescription;
-        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnExit;
     }
