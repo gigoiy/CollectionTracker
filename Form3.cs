@@ -8,7 +8,9 @@ using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ProjectAlexKadyn.eBayAPI;
+using Newtonsoft.Json;
+using RestSharp;
+using eBayAPI;
 
 namespace ProjectAlexKadyn
 {
@@ -17,30 +19,45 @@ namespace ProjectAlexKadyn
         public frmAddNewItem()
         {
             InitializeComponent();
-            // by using a constructor, the collection name is carried from from2 to 3...
-
-        }
-
-        public void searchItem()
-        {
 
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Collection collection = new Collection();
 
-            if (txtDescription.Text != "" && txtModel.Text != "" && ddCategory.Text != "")
+            if (txtDescription.Text != "" && txtModel.Text != "")
             {
-                collection.item[0, 0] = txtModel.Text;
-                collection.item[1, 0] = txtDescription.Text;
-                collection.item[2, 0] = ddCategory.Text;
+                searchItem();
             }
             else
             {
                 Console.WriteLine("ERROR... Please fill out all areas for the item.");
             }
-            // trying to set the specific array for each item when added. troubleshooting needed
+        }
+
+        GetResults.Itemsummary result;
+
+        private void searchItem()
+        {
+            //Call the API
+            //Uses RestSharp
+
+            var client = new RestClient(/*Input endpoint URI of API here without last argument*/);
+            var request = new RestRequest(/*Input last argument of the address*/);
+            var response = client.Execute(request);
+
+            if (response.StatusCode == System.Net.HttpStatusCode.OK )
+            {
+                string rawResponse = response.Content;
+
+                //Convert the raw data
+                result = JsonConvert.DeserializeObject<GetResults.Itemsummary>(rawResponse);
+
+                if (result != null)
+                {
+                  //Add processing of the search result, maybe assign items to collection class like in frmViewCollection?
+                }
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
