@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using RestSharp;
-using eBayAPI;
 
 namespace ProjectAlexKadyn
 {
