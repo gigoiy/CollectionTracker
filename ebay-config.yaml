@@ -4,9 +4,9 @@
 
 # UPDATE the values in this file, before running the tests
 api.sandbox.ebay.com:
-    appid: <appid-from-developer-portal>
-    certid: <certid-from-developer-portal>
-    devid: <devid-from-developer-portal>
+    appid: "KadynBel-Collecti-SBX-30fba208d-ebe94452"
+    certid: "SBX-0fba208dbc52-84a7-46bf-993b-a4cd"
+    devid: "4a4efd5d-c004-4ecd-8f01-d94437ed622f"
     redirecturi: <redirect_uri-from-developer-portal>
 
 api.ebay.com:

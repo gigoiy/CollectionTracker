@@ -43,7 +43,6 @@
             this.lblModel.Size = new System.Drawing.Size(84, 13);
             this.lblModel.TabIndex = 0;
             this.lblModel.Text = "Product Search:";
-            this.lblModel.Click += new System.EventHandler(this.lblModel_Click);
             // 
             // txtModel
             // 

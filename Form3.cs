@@ -8,6 +8,7 @@ namespace ProjectAlexKadyn
     public partial class frmAddNewItem : Form
     {
         Collection collectionCurrent = new Collection();
+        frmViewCollection viewPage = new frmViewCollection();
 
         public float value;
         public string name;
@@ -34,7 +35,22 @@ namespace ProjectAlexKadyn
                     searchItem();
                     collectionCurrent.item[0, 0] = txtModel.Text;
                     collectionCurrent.item[0, 1] = value.ToString();
+                    selectedItem = collectionCurrent.item[0, 0];
                 }
+                else
+                {
+                    searchItem();
+                    int index = Array.IndexOf(collectionCurrent.item, selectedItem);
+                    collectionCurrent.item[index + 1, index] = txtModel.Text;
+                    collectionCurrent.item[index + 1, index + 1] = value.ToString();
+                }  
+                
+                //Next Steps:
+                //Add item array, name, and value transfer to frmViewCollection
+                //Populate table in frmViewCollection
+                //Test OAuth authorization
+                //Should be finished after that!
+
             }
             else
             {
@@ -62,9 +78,9 @@ namespace ProjectAlexKadyn
 
                 if (result != null)
                 {
-                    foreach (var obj in result.itemSummaries)
+                    foreach (var itemsummary in result.itemSummaries)
                     {
-                        //Add average value calculations
+                        value = value + Int32.Parse(itemsummary.price.value);
                     }
                 }
             }
@@ -73,16 +89,6 @@ namespace ProjectAlexKadyn
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-
-        }
-
-        private void txtDecription_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblModel_Click(object sender, EventArgs e)
-        {
 
         }
     }

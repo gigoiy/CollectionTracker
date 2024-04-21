@@ -152,7 +152,6 @@
             this.gridItems.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.gridItems.Size = new System.Drawing.Size(665, 178);
             this.gridItems.TabIndex = 10;
-            this.gridItems.Paint += new System.Windows.Forms.PaintEventHandler(this.gridItems_Paint);
             // 
             // lblDescription
             // 

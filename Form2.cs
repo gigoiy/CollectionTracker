@@ -25,7 +25,7 @@ namespace ProjectAlexKadyn
         private void frmViewCollection_Load(object sender, System.EventArgs e)
         {
             collectionDefault.collectionName = "Add New Collection";
-            collectionDefault.collectionValue = "$0.00";
+            collectionDefault.collectionValue = "0.00";
 
             collectionCurrent.collectionName = name;
             collectionCurrent.collectionValue = value.ToString();
@@ -82,9 +82,5 @@ namespace ProjectAlexKadyn
             this.Hide();
         }
 
-        private void gridItems_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

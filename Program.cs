@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,7 +20,7 @@ namespace ProjectAlexKadyn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            CredentialUtil.Load("ebay-config-sample.yaml");
+            CredentialUtil.Load("C:\\Users\\kbele\\Source\\Repos\\CollectionTracker\\ebay-config.yaml"); //Change this to the path of your ebay-config.yaml
             Application.Run(new frmHome());
         }
     }

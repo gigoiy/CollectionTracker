@@ -27,7 +27,7 @@ namespace ProjectAlexKadyn
 
             frmViewCollection form = new frmViewCollection();
             form.name = ((Collection)lstCollections.SelectedItem).collectionName;
-            form.value = Int32.Parse(((Collection)lstCollections.SelectedItem).collectionValue);
+            form.value = float.Parse(((Collection)lstCollections.SelectedItem).collectionValue);
             this.Hide();
             form.Show();
             
@@ -40,14 +40,6 @@ namespace ProjectAlexKadyn
 
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void lstCollections_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

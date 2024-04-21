@@ -55,7 +55,6 @@
             this.lstCollections.Name = "lstCollections";
             this.lstCollections.Size = new System.Drawing.Size(454, 160);
             this.lstCollections.TabIndex = 1;
-            this.lstCollections.SelectedIndexChanged += new System.EventHandler(this.lstCollections_SelectedIndexChanged);
             // 
             // lblCollections
             // 
@@ -87,7 +86,6 @@
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnExit
             // 
