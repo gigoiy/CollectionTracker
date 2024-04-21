@@ -40,15 +40,15 @@
             this.lblModel.Location = new System.Drawing.Point(44, 22);
             this.lblModel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(172, 13);
+            this.lblModel.Size = new System.Drawing.Size(84, 13);
             this.lblModel.TabIndex = 0;
-            this.lblModel.Text = "Description/Model Name/Model #:";
+            this.lblModel.Text = "Product Search:";
             this.lblModel.Click += new System.EventHandler(this.lblModel_Click);
             // 
             // txtModel
             // 
             this.txtModel.Location = new System.Drawing.Point(47, 49);
-            this.txtModel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtModel.Margin = new System.Windows.Forms.Padding(2);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(319, 20);
             this.txtModel.TabIndex = 1;
@@ -56,7 +56,7 @@
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(47, 88);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(82, 19);
             this.btnAdd.TabIndex = 6;
@@ -68,7 +68,7 @@
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(290, 94);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(76, 19);
             this.btnExit.TabIndex = 7;
@@ -87,7 +87,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtModel);
             this.Controls.Add(this.lblModel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAddNewItem";
             this.Text = "Add New Item";
             this.ResumeLayout(false);

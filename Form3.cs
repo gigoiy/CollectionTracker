@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.ServiceModel.Description;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using RestSharp;
@@ -15,10 +7,21 @@ namespace ProjectAlexKadyn
 {
     public partial class frmAddNewItem : Form
     {
+        Collection collectionCurrent = new Collection();
+
+        public float value;
+        public string name;
+        public string selectedItem;
         public frmAddNewItem()
         {
             InitializeComponent();
 
+        }
+
+        private void frmAddNewItem_Load(object sender, System.EventArgs e)
+        {
+            collectionCurrent.collectionName = name;
+            collectionCurrent.collectionValue = value.ToString();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -26,7 +29,12 @@ namespace ProjectAlexKadyn
 
             if (txtModel.Text != string.Empty)
             {
-                searchItem();
+                if (selectedItem == null)
+                {
+                    searchItem();
+                    collectionCurrent.item[0, 0] = txtModel.Text;
+                    collectionCurrent.item[0, 1] = value.ToString();
+                }
             }
             else
             {
@@ -34,27 +42,30 @@ namespace ProjectAlexKadyn
             }
         }
 
-        GetResults.Itemsummary result;
+        GetResults.Rootobject result;
 
         private void searchItem()
         {
             //Call the API
             //Uses RestSharp
 
-            var client = new RestClient(/*Input endpoint URI of API here without last argument*/);
-            var request = new RestRequest(/*Input last argument of the address*/);
+            var client = new RestClient("https://api.sandbox.ebay.com/buy/browse/v1");
+            var request = new RestRequest("/item_summary/search?q="+txtModel.Text);
             var response = client.Execute(request);
 
-            if (response.StatusCode == System.Net.HttpStatusCode.OK )
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 string rawResponse = response.Content;
 
                 //Convert the raw data
-                result = JsonConvert.DeserializeObject<GetResults.Itemsummary>(rawResponse);
+                result = JsonConvert.DeserializeObject<GetResults.Rootobject>(rawResponse);
 
                 if (result != null)
                 {
-                  //Add processing of the search result, maybe assign items to collection class like in frmViewCollection?
+                    foreach (var obj in result.itemSummaries)
+                    {
+                        //Add average value calculations
+                    }
                 }
             }
         }

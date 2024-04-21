@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using eBay.ApiClient.Auth.OAuth2;
+using eBay.ApiClient.Auth.OAuth2.Model;
 
 
 namespace ProjectAlexKadyn
@@ -17,6 +19,7 @@ namespace ProjectAlexKadyn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            CredentialUtil.Load("ebay-config-sample.yaml");
             Application.Run(new frmHome());
         }
     }

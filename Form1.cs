@@ -27,7 +27,7 @@ namespace ProjectAlexKadyn
 
             frmViewCollection form = new frmViewCollection();
             form.name = ((Collection)lstCollections.SelectedItem).collectionName;
-            form.totalValue = ((Collection)lstCollections.SelectedItem).collectionValue;
+            form.value = Int32.Parse(((Collection)lstCollections.SelectedItem).collectionValue);
             this.Hide();
             form.Show();
             

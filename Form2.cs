@@ -7,11 +7,12 @@ namespace ProjectAlexKadyn
 {
     public partial class frmViewCollection : Form
     {
-        public string totalValue;
         public float value;
         public string name;
+        public string selectedItem;
 
         static frmHome home = new frmHome();
+        static frmAddNewItem itemPage = new frmAddNewItem();
 
         Collection collectionCurrent = new Collection();
         Collection collectionDefault = new Collection();
@@ -27,7 +28,7 @@ namespace ProjectAlexKadyn
             collectionDefault.collectionValue = "$0.00";
 
             collectionCurrent.collectionName = name;
-            collectionCurrent.collectionValue = totalValue;
+            collectionCurrent.collectionValue = value.ToString();
 
             if (name == collectionDefault.collectionName)
             {
@@ -44,9 +45,9 @@ namespace ProjectAlexKadyn
 
         private void btnAddNewItem_Click(object sender, EventArgs e)
         {
-
-            frmAddNewItem form = new frmAddNewItem();
-            form.Show();
+            itemPage.name = collectionCurrent.collectionName;
+            itemPage.value = Int32.Parse(collectionCurrent.collectionValue);
+            itemPage.Show();
 
         }
 
@@ -62,7 +63,7 @@ namespace ProjectAlexKadyn
                 home.lstCollections.Items.Remove(home.lstCollections.SelectedItem);
             }
             collectionCurrent.collectionName = txtCollectionName.Text;
-            collectionCurrent.collectionValue = totalValue;
+            collectionCurrent.collectionValue = value.ToString();
 
             home.lstCollections.Items.Add(new Collection { collectionName = collectionCurrent.collectionName, collectionValue = collectionCurrent.collectionValue });
 
@@ -73,7 +74,7 @@ namespace ProjectAlexKadyn
         private void btnSaveAsNew_Click(object sender, EventArgs e)
         {
             collectionCurrent.collectionName = txtCollectionName.Text;
-            collectionCurrent.collectionValue = totalValue;
+            collectionCurrent.collectionValue = value.ToString();
 
             home.lstCollections.Items.Add(new Collection { collectionName = collectionCurrent.collectionName, collectionValue = collectionCurrent.collectionValue });
 

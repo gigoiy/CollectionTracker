@@ -12,7 +12,7 @@ namespace ProjectAlexKadyn
         public string collectionName { get; set; }
         public string collectionValue { get; set; }
 
-        public string[,] item; //starts 2d array, 1st will be the item name, 2nd will be the price and description/model #
+        public string[,] item; //starts 2d array, 1st will be the item name, 2nd will be the prices
 
         public override string ToString()
         {
