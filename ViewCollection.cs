@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Linq;
 using Microsoft.AspNetCore.Routing.Constraints;
 
 namespace ProjectAlexKadyn
@@ -42,15 +43,19 @@ namespace ProjectAlexKadyn
                 items = itemPage.items.Clone() as string[,];
                 previousItem = itemPage.previousItem;
 
+                collectionCurrent.item = items.Clone() as string[,];
+
                 name = itemPage.name;
                 txtCollectionName.Text = itemPage.name;
                 txtTotalValue.Text = (itemPage.value + float.Parse(txtTotalValue.Text)).ToString();
 
                 value = float.Parse(txtTotalValue.Text);
 
-                int[] index = ItemSearch.FindIndex(items, previousItem);
-                gridItems.Controls.Add(new TextBox { Text = items[index[0], 0] }, 0, index[0]);
-                gridItems.Controls.Add(new TextBox { Text = items[index[0], 1] }, 1, index[0]);
+
+                int[] index = ItemSearch.FindIndex(collectionCurrent.item, previousItem);
+
+                gridData.Rows.Add(items[index[0], 0].ToString(), items[index[0], 1].ToString());
+
 
                 searchClosed = false;
 

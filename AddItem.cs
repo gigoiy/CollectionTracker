@@ -46,9 +46,9 @@ namespace ProjectAlexKadyn
                 {
                     searchItem();
                     int[] index = ItemSearch.FindIndex(collectionCurrent.item, previousItem);
-                    collectionCurrent.item[index[0] + 1, 0] = txtModel.Text;
-                    collectionCurrent.item[index[0] + 1, 1] = average.ToString();
-                    previousItem = collectionCurrent.item[index[0] + 1, 0];
+                    collectionCurrent.item[index[0] + 1, index[1]] = txtModel.Text;
+                    collectionCurrent.item[index[0] + 1, index[1] + 1] = average.ToString();
+                    previousItem = txtModel.Text;
                 }
 
                 items = collectionCurrent.item.Clone() as string[,];
