@@ -30,16 +30,32 @@ namespace ProjectAlexKadyn
             form.value = float.Parse(((Collection)lstCollections.SelectedItem).collectionValue);
             this.Hide();
             form.Show();
-            
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            
+
             this.Close();
 
         }
 
+        private void lstCollections_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (lblWarning.Visible == true)
+            {
+                lstCollections.Items.Remove(lstCollections.SelectedItem);
+                lblWarning.Visible = false;
+            }
+            else
+            {
+                lblWarning.Visible = true;
+            }
+        }
     }
 }

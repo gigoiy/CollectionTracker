@@ -20,7 +20,7 @@ namespace ProjectAlexKadyn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            CredentialUtil.Load("C:\\Users\\kbele\\Source\\Repos\\CollectionTracker\\ebay-config.yaml"); //Change this to the path of your ebay-config.yaml
+            CredentialUtil.Load("C:\\Users\\16039\\Source\\Repos\\CollectionTracker123\\ebay-config.yaml"); //Change this to the path of your ebay-config.yaml
             Application.Run(new frmHome());
         }
     }

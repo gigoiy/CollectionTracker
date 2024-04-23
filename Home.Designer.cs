@@ -28,97 +28,105 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblWelcome = new System.Windows.Forms.Label();
-            this.lstCollections = new System.Windows.Forms.ListBox();
-            this.lblCollections = new System.Windows.Forms.Label();
-            this.btnView = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lblWelcome = new System.Windows.Forms.Label();
+            lstCollections = new System.Windows.Forms.ListBox();
+            lblCollections = new System.Windows.Forms.Label();
+            btnView = new System.Windows.Forms.Button();
+            btnDelete = new System.Windows.Forms.Button();
+            btnExit = new System.Windows.Forms.Button();
+            lblWarning = new System.Windows.Forms.Label();
+            SuspendLayout();
             // 
             // lblWelcome
             // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Location = new System.Drawing.Point(45, 37);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(177, 13);
-            this.lblWelcome.TabIndex = 0;
-            this.lblWelcome.Text = "Welcome to our Collection Tracker! ";
+            lblWelcome.AutoSize = true;
+            lblWelcome.Location = new System.Drawing.Point(60, 57);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new System.Drawing.Size(245, 20);
+            lblWelcome.TabIndex = 0;
+            lblWelcome.Text = "Welcome to our Collection Tracker! ";
             // 
             // lstCollections
             // 
-            this.lstCollections.FormattingEnabled = true;
-            this.lstCollections.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.lstCollections.Location = new System.Drawing.Point(47, 100);
-            this.lstCollections.Margin = new System.Windows.Forms.Padding(2);
-            this.lstCollections.Name = "lstCollections";
-            this.lstCollections.Size = new System.Drawing.Size(454, 160);
-            this.lstCollections.TabIndex = 1;
+            lstCollections.FormattingEnabled = true;
+            lstCollections.ImeMode = System.Windows.Forms.ImeMode.On;
+            lstCollections.ItemHeight = 20;
+            lstCollections.Location = new System.Drawing.Point(63, 154);
+            lstCollections.Name = "lstCollections";
+            lstCollections.Size = new System.Drawing.Size(604, 244);
+            lstCollections.TabIndex = 1;
+            lstCollections.SelectedIndexChanged += lstCollections_SelectedIndexChanged;
             // 
             // lblCollections
             // 
-            this.lblCollections.AutoSize = true;
-            this.lblCollections.Location = new System.Drawing.Point(45, 76);
-            this.lblCollections.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCollections.Name = "lblCollections";
-            this.lblCollections.Size = new System.Drawing.Size(61, 13);
-            this.lblCollections.TabIndex = 2;
-            this.lblCollections.Text = "Collections:";
+            lblCollections.AutoSize = true;
+            lblCollections.Location = new System.Drawing.Point(60, 117);
+            lblCollections.Name = "lblCollections";
+            lblCollections.Size = new System.Drawing.Size(85, 20);
+            lblCollections.TabIndex = 2;
+            lblCollections.Text = "Collections:";
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(47, 297);
-            this.btnView.Margin = new System.Windows.Forms.Padding(2);
-            this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(56, 19);
-            this.btnView.TabIndex = 3;
-            this.btnView.Text = "View";
-            this.btnView.UseVisualStyleBackColor = true;
-            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            btnView.Location = new System.Drawing.Point(63, 457);
+            btnView.Name = "btnView";
+            btnView.Size = new System.Drawing.Size(75, 29);
+            btnView.TabIndex = 3;
+            btnView.Text = "View";
+            btnView.UseVisualStyleBackColor = true;
+            btnView.Click += btnView_Click;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(116, 297);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(56, 19);
-            this.btnDelete.TabIndex = 5;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Location = new System.Drawing.Point(155, 457);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(75, 29);
+            btnDelete.TabIndex = 5;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnExit
             // 
-            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(444, 297);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(56, 19);
-            this.btnExit.TabIndex = 6;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            btnExit.Location = new System.Drawing.Point(592, 457);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new System.Drawing.Size(75, 29);
+            btnExit.TabIndex = 6;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
+            // 
+            // lblWarning
+            // 
+            lblWarning.AutoSize = true;
+            lblWarning.ForeColor = System.Drawing.Color.Red;
+            lblWarning.Location = new System.Drawing.Point(60, 520);
+            lblWarning.Name = "lblWarning";
+            lblWarning.Size = new System.Drawing.Size(347, 20);
+            lblWarning.TabIndex = 7;
+            lblWarning.Text = "Press \"Delete\" Again to remove selected Collection";
+            lblWarning.Visible = false;
             // 
             // frmHome
             // 
-            this.AcceptButton = this.btnView;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnView);
-            this.Controls.Add(this.lblCollections);
-            this.Controls.Add(this.lstCollections);
-            this.Controls.Add(this.lblWelcome);
-            this.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "frmHome";
-            this.Text = "CollectionTracker";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AcceptButton = btnView;
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            CancelButton = btnExit;
+            ClientSize = new System.Drawing.Size(800, 563);
+            Controls.Add(lblWarning);
+            Controls.Add(btnExit);
+            Controls.Add(btnDelete);
+            Controls.Add(btnView);
+            Controls.Add(lblCollections);
+            Controls.Add(lstCollections);
+            Controls.Add(lblWelcome);
+            ImeMode = System.Windows.Forms.ImeMode.On;
+            Name = "frmHome";
+            Text = "CollectionTracker";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -129,6 +137,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnExit;
         public System.Windows.Forms.ListBox lstCollections;
+        private System.Windows.Forms.Label lblWarning;
     }
 }
 

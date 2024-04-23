@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace ProjectAlexKadyn
     public class Collection
     {
         // This is where the class for the info will be
+
+        public bool confirmq = false;
         public string collectionName { get; set; }
         public string collectionValue { get; set; }
 
