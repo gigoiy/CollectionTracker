@@ -103,9 +103,9 @@
             lblWarning.ForeColor = System.Drawing.Color.Red;
             lblWarning.Location = new System.Drawing.Point(60, 520);
             lblWarning.Name = "lblWarning";
-            lblWarning.Size = new System.Drawing.Size(347, 20);
+            lblWarning.Size = new System.Drawing.Size(345, 20);
             lblWarning.TabIndex = 7;
-            lblWarning.Text = "Press \"Delete\" Again to remove selected Collection";
+            lblWarning.Text = "Press \"Delete\" again to remove selected Collection";
             lblWarning.Visible = false;
             // 
             // frmHome

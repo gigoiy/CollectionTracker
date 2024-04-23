@@ -24,7 +24,7 @@ namespace ProjectAlexKadyn
 
         private void btnView_Click(object sender, EventArgs e)
         {
-
+            lblWarning.Visible = false;
             frmViewCollection form = new frmViewCollection();
             form.name = ((Collection)lstCollections.SelectedItem).collectionName;
             form.value = float.Parse(((Collection)lstCollections.SelectedItem).collectionValue);
