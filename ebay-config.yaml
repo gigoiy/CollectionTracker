@@ -10,7 +10,7 @@ api.sandbox.ebay.com:
     redirecturi: <redirect_uri-from-developer-portal>
 
 api.ebay.com:
-    appid: <appid-from-developer-portal>
-    certid: <certid-from-developer-portal>
-    devid: <devid-from-developer-portal>
+    appid: "KadynBel-Collecti-PRD-eac2147f3-b9710094"
+    certid: "PRD-ac2147f39c40-824c-4978-9e62-486e"
+    devid: "4a4efd5d-c004-4ecd-8f01-d94437ed622f"
     redirecturi: <redirect_uri-from-developer-portal>

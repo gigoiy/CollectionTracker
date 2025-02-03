@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using eBay.ApiClient.Auth.OAuth2;
@@ -79,10 +80,10 @@ namespace ProjectAlexKadyn
             //Uses RestSharp
 
             scopes.Add("https://api.ebay.com/oauth/api_scope");
-            var authresponse = auth.GetApplicationToken(OAuthEnvironment.SANDBOX, scopes);
+            var authresponse = auth.GetApplicationToken(OAuthEnvironment.PRODUCTION, scopes);
             string token = authresponse.AccessToken.Token;
             var authenticator = new OAuth2AuthorizationRequestHeaderAuthenticator(token, "Bearer");
-            var clientOptions = new RestClientOptions("https://api.sandbox.ebay.com/buy/browse/v1")
+            var clientOptions = new RestClientOptions("https://api.ebay.com/buy/browse/v1")
             {
                 Authenticator = authenticator
             };
@@ -103,7 +104,7 @@ namespace ProjectAlexKadyn
                     average = average + float.Parse(itemsummary.price.value);
                 }
 
-                average = average / result.total;
+                average = average / result.limit;
             }
         }
 
